@@ -6,7 +6,7 @@ import { mount, shallow } from 'enzyme';
 
 const flight = {
   "arrivalTime": "16:30",
-  "date": "2020/11/02",
+  "date": "2024/11/02",
   "departureTime": "14:30",
   "destination": "Delhi (DEL)",
   "flightNo": "AI-132",
@@ -47,7 +47,7 @@ describe('Flight results component', () => {
 
   it('should show flight duration', () => {
     wrapper = mount(<FlightInfo data={flight} />);
-    expect(wrapper.find(".detail-label h4").at(3).text()).toBe('2h 0m');
+    expect(wrapper.find(".detail-label h4").at(3).text()).toBe('02h 00m');
     expect(wrapper.find(".detail-label p").at(3).text()).toBe('Non stop');
     wrapper.unmount();
   });

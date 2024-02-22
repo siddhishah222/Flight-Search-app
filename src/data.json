@@ -1,5 +1,15 @@
 [
   {
+    "arrivalTime": "08:00",
+    "date": "2024/05/01",
+    "departureTime": "07:00",
+    "destination": "Pune (PNQ)",
+    "flightNo": "6E-104",
+    "name": "IndiGo",
+    "origin": "Bengaluru (BLR)",
+    "price": 3405
+  },
+  {
     "arrivalTime": "06:00",
     "date": "2024/05/01",
     "departureTime": "04:00",
@@ -60,8 +70,18 @@
     "price": 6345
   },
   {
+    "arrivalTime": "12:00",
+    "date": "2024/03/01",
+    "departureTime": "10:50",
+    "destination": "Delhi (DEL)",
+    "flightNo": "SJ-106",
+    "name": "Singapore Airlines",
+    "origin": "Bengaluru (BLR)",
+    "price": 6345
+  },
+  {
     "arrivalTime": "10:00",
-    "date": "2024/04/01",
+    "date": "2024/03/01",
     "departureTime": "08:00",
     "destination": "Bengaluru (BLR)",
     "flightNo": "SJ-107",
@@ -98,6 +118,16 @@
     "name": "IndiGo",
     "origin": "Delhi (DEL)", 
     "price": 4137
+  },
+  {
+    "arrivalTime": "16:30",
+    "date": "2024/04/01",
+    "departureTime": "14:00",
+    "destination": "Mumbai (BOM)",
+    "flightNo": "AI-121",
+    "name": "Air India",
+    "origin": "Bengaluru (BLR)",
+    "price": 3217
   },
   {
     "arrivalTime": "16:30",
@@ -288,6 +318,16 @@
     "name": "IndiGo",
     "origin": "Mumbai (BOM)",
     "price": 4567
+  },
+  {
+    "arrivalTime": "16:10",
+    "date": "2024/03/21",
+    "departureTime": "14:30",
+    "destination": "Delhi (DEL)",
+    "flightNo": "AI-134",
+    "name": "Air India",
+    "origin": "Bengaluru (BLR)",
+    "price": 5132
   },
   {
     "arrivalTime": "13:10",
