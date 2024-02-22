@@ -101,7 +101,7 @@ export const SearchForm = (props) => {
             placeholder="Enter Origin"
             ref={(ref) => origin = ref}
           />
-          {status.origin && <ErrorLabel message="Please enter a valid airport"></ErrorLabel>}
+          {status.origin && <ErrorLabel message="Please enter a valid airport" />}
         </Form.Group>
 
         <Form.Group controlId="formGridDestination">
@@ -111,13 +111,13 @@ export const SearchForm = (props) => {
             placeholder="Enter Destination"
             ref={(ref) => destination = ref}
           />
-          {status.destination && <ErrorLabel message="Please enter a valid airport but not same as origin"></ErrorLabel>}
+          {status.destination && <ErrorLabel message="Please enter a valid airport but not same as origin" />}
         </Form.Group>
 
         <Form.Group controlId="formGridDateOfDep">
           <Form.Label>Departure Date</Form.Label>
           <Form.Control type="date" name="dateOfDep" placeholder="yyyy-mm-dd" required />
-          {status.departureDate && <ErrorLabel message="Please enter a valid departure date"></ErrorLabel>}
+          {status.departureDate && <ErrorLabel message="Please enter a valid departure date"/>}
         </Form.Group>
 
         {isReturn && <Form.Group controlId="formGridDateOfReturn">

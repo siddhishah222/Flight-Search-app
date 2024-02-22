@@ -18,7 +18,7 @@
       "cumulativeFlight": {
         "origin": "Mumbai (BOM)",
         "destination": "Delhi (DEL)",
-        "date": "2020/11/02",
+        "date": "2024/04/02",
         "departureTime": "7:20",
         "arrivalTime": "22:10",
         "arrivalTimeStamp": 1604335200000,
@@ -29,7 +29,7 @@
       "flights": [
         {
           "arrivalTime": "9:50",
-          "date": "2020/11/02",
+          "date": "2024/04/02",
           "departureTime": "7:20",
           "destination": "Pune (PNQ)",
           "flightNo": "AI-120",
@@ -41,7 +41,7 @@
         },
         {
           "arrivalTime": "22:10",
-          "date": "2020/11/02",
+          "date": "2024/04/02",
           "departureTime": "20:00",
           "destination": "Delhi (DEL)",
           "flightNo": "AI-135",
@@ -57,7 +57,7 @@
       "cumulativeFlight": {
         "origin": "Mumbai (BOM)",
         "destination": "Delhi (DEL)",
-        "date": "2020/11/02",
+        "date": "2024/04/02",
         "departureTime": "6:10",
         "arrivalTime": "22:10",
         "arrivalTimeStamp": 1604335200000,
@@ -68,7 +68,7 @@
       "flights": [
         {
           "arrivalTime": "6:58",
-          "date": "2020/11/02",
+          "date": "2024/04/02",
           "departureTime": "6:10",
           "destination": "Pune (PNQ)",
           "flightNo": "AI-121",
@@ -80,7 +80,7 @@
         },
         {
           "arrivalTime": "22:10",
-          "date": "2020/11/02",
+          "date": "2024/04/02",
           "departureTime": "20:00",
           "destination": "Delhi (DEL)",
           "flightNo": "AI-135",

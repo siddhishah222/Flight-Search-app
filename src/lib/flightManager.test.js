@@ -1,19 +1,5 @@
 import { findPaths } from './flightManager';
 import mockFlights from './../data.json';
-import { mount, shallow } from 'enzyme';
-
-const flight = {
-  "arrivalTime": "16:30",
-  "date": "2020/11/02",
-  "departureTime": "14:30",
-  "destination": "Delhi (DEL)",
-  "flightNo": "AI-132",
-  "name": "Air India",
-  "origin": "Mumbai (BOM)",
-  "price": 4170,
-  "arrivalTimeStamp": 1604314800000,
-  "departureTimeStamp": 1604307600000
-}
 
 describe('Flights calculation algorithm', () => {
 

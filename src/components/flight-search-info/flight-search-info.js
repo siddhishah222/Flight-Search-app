@@ -11,8 +11,8 @@ export const FlightSearchInfo = (props) => {
     const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     const monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-    const dayOfWeek = daysOfWeek[formattedDate.getDay()];
-    const dayOfMonth = formattedDate.getDate();
+    const dayOfWeek = daysOfWeek[formattedDate.getDay() + 1];
+    const dayOfMonth = formattedDate.getDate() + 1;
     const month = monthsOfYear[formattedDate.getMonth()];
 
     const getDayOfMonthWithSuffix = (day) => {
