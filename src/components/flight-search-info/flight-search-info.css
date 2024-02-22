@@ -1,0 +1,16 @@
+.flight-search-info {
+  margin: 10px
+}
+
+.flight-search-info div {
+  display: flex;
+  flex-direction: row;
+}
+
+.flight-search-info h3 {
+  font-size: 1.5rem;
+}
+
+.flight-search-info p {
+  margin-left: 40px;
+}
