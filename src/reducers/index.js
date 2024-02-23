@@ -1,6 +1,8 @@
 const reducer = (state = {}, action) => {
   switch (action.type) {
-    case 'GET_FLIGHTS', 'GET_FILTERS', 'GET_ROUTES':
+    case 'GET_FLIGHTS':
+    case 'GET_FILTERS':
+    case 'GET_ROUTES':
       return { ...state, loading: true };
     case 'GET_FLIGHTS_SUCCESS':
       return { ...state, flights: action.json, loading: false };
