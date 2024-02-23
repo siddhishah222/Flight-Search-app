@@ -6,9 +6,10 @@ import FlightsGrid from './components/flights-grid/flights-grid';
 import { getFlights } from './actions';
 
 function App(props) {
+  const { getFlights, flights } = props;
   useEffect(() => {
-    props.getFlights()
-  }, [(props.flights || []).legnth]);
+    getFlights()
+  }, [flights, getFlights]);
 
   const { origin, destination, departureDate, returnDate } = props.filters || {};
   return (
