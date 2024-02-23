@@ -7,8 +7,8 @@ import './all-flights.css';
 const AllFlightsList = () => {
   return (
     <div>
-      <h2>
-        All Available Flights
+      <h2 style={{margin: '40px', alignSelf: 'flex-start', display:'flex'}}>
+        Available Flights
       </h2>
       {FlightData.map((flight, index) => (
         <div key={index} className="list-flights">
