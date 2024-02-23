@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { DetailLabel } from './../detail-label/detail-label';
@@ -31,7 +31,7 @@ export const MultiFlightInfo = (props) => {
         <MultiFlightLogo/>
         <div className="detail-label">
           <h4>Multiple</h4>
-          <a href="javascript:void(0)" onClick={() => toggleLabel( showHideLabel === 'Show Details' ? 'Hide Details' : 'Show Details') }>
+          <a href="#" onClick={() => toggleLabel( showHideLabel === 'Show Details' ? 'Hide Details' : 'Show Details') }>
             {showHideLabel}
           </a>
         </div>
@@ -44,10 +44,10 @@ export const MultiFlightInfo = (props) => {
       { showHideLabel === 'Hide Details' && flights.map((flight, index) => {
         const timeDiff = index < flights.length -1 ? flights[index+1].departureTimeStamp - flight.arrivalTimeStamp : null;
         return (
-          <>
+          <Fragment key={index}>
             <FlightInfo data={flight} isMultiMode={true} />
             {timeDiff && <LayoverInfo time={getTimeDifferece(timeDiff)} />}
-          </>  
+          </Fragment>  
         );
       })}
     </Card>
