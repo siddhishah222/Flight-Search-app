@@ -7,7 +7,6 @@ import { PriceInfo } from './../price-info/price-info';
 import { getTimeDifferece } from './../../lib/utils';
 import multiFlightLogo from './../../assets/multiflight.png';
 import './multi-flight-info.css';
-import './../flight-info/flight-info.css';
 
 const MultiFlightLogo = (props) => {
   return <img src={multiFlightLogo} alt="multiple flights logo" width="32" height="32" />
