@@ -26,7 +26,9 @@ function App(props) {
         </aside>
         <section className="Results-section">
           {!props.routes && (
-             <AllFlights/>
+            <div style={{width: '1080px'}}>
+              <AllFlights/>
+            </div>
           )}
           {routes && routes.onwards && (
             <FlightsGrid 
