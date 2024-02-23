@@ -1,5 +1,44 @@
 [
   {
+    "cumulativeFlight": {
+      "origin": "Mumbai (BOM)",
+      "destination": "Delhi (DEL)",
+      "date": "2024/04/02",
+      "departureTime": "7:20",
+      "arrivalTime": "22:10",
+      "arrivalTimeStamp": 1604335200000,
+      "departureTimeStamp": 1604281800000,
+      "dayChange": false,
+      "totalFare": 10868
+    },
+    "flights": [
+      {
+        "arrivalTime": "9:50",
+        "date": "2024/04/02",
+        "departureTime": "7:20",
+        "destination": "Pune (PNQ)",
+        "flightNo": "AI-120",
+        "name": "Air India",
+        "origin": "Mumbai (BOM)",
+        "price": 5635,
+        "arrivalTimeStamp": 1604290800000,
+        "departureTimeStamp": 1604281800000
+      },
+      {
+        "arrivalTime": "22:10",
+        "date": "2024/04/02",
+        "departureTime": "20:00",
+        "destination": "Delhi (DEL)",
+        "flightNo": "AI-135",
+        "name": "Air India",
+        "origin": "Pune (PNQ)",
+        "price": 5233,
+        "arrivalTimeStamp": 1604335200000,
+        "departureTimeStamp": 1604327400000
+      }
+    ]
+  },
+  {
     "arrivalTime": "08:00",
     "date": "2024/05/01",
     "departureTime": "07:00",
@@ -378,5 +417,44 @@
     "name": "IndiGo",
     "origin": "Pune (PNQ)",
     "price": 3187
+  },
+  {
+    "cumulativeFlight": {
+      "origin": "Mumbai (BOM)",
+      "destination": "Delhi (DEL)",
+      "date": "2024/04/02",
+      "departureTime": "7:20",
+      "arrivalTime": "22:10",
+      "arrivalTimeStamp": 1604335200000,
+      "departureTimeStamp": 1604281800000,
+      "dayChange": false,
+      "totalFare": 10868
+    },
+    "flights": [
+      {
+        "arrivalTime": "9:50",
+        "date": "2024/04/02",
+        "departureTime": "7:20",
+        "destination": "Pune (PNQ)",
+        "flightNo": "AI-120",
+        "name": "Air India",
+        "origin": "Mumbai (BOM)",
+        "price": 5635,
+        "arrivalTimeStamp": 1604290800000,
+        "departureTimeStamp": 1604281800000
+      },
+      {
+        "arrivalTime": "22:10",
+        "date": "2024/04/02",
+        "departureTime": "20:00",
+        "destination": "Delhi (DEL)",
+        "flightNo": "AI-135",
+        "name": "Air India",
+        "origin": "Pune (PNQ)",
+        "price": 5233,
+        "arrivalTimeStamp": 1604335200000,
+        "departureTimeStamp": 1604327400000
+      }
+    ]
   }
 ]
