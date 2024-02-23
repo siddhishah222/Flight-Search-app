@@ -73,7 +73,7 @@ export const SearchForm = (props) => {
     <Card>
       <Card.Body>
       <Form className="search-form-container" onSubmit={handleSubmit}>
-        <Form.Group >
+        <Form.Group>
           <Form.Check
             inline
             checked={!isReturn}
@@ -125,7 +125,7 @@ export const SearchForm = (props) => {
         {isReturn && <Form.Group controlId="formGridDateOfReturn">
           <Form.Label>Return Date</Form.Label>
           <Form.Control type="date" name="dateOfReturn"  placeholder="yyyy-mm-dd" required />
-          {status.returnDate && <ErrorLabel message="Please enter a valid return date"></ErrorLabel>}
+          {status.returnDate && <ErrorLabel message="Please enter a valid return date"/>}
         </Form.Group>}
 
         <Form.Group controlId="exampleForm.ControlSelect1">
@@ -145,7 +145,6 @@ export const SearchForm = (props) => {
         </Form> 
       </Card.Body>
     </Card>
-     
   )
 }
 
