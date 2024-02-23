@@ -96,6 +96,7 @@ export const SearchForm = (props) => {
 
         <Form.Group controlId="formGridOrigin">
           <Typeahead
+            id="originTypeahead"
             labelKey="origin"
             options={airportsList}
             placeholder="Enter Origin"
@@ -106,6 +107,7 @@ export const SearchForm = (props) => {
 
         <Form.Group controlId="formGridDestination">
           <Typeahead
+            id="destinationTypeahead"
             labelKey="destination"
             options={airportsList}
             placeholder="Enter Destination"
