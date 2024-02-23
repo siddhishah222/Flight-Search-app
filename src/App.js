@@ -4,14 +4,17 @@ import { connect } from 'react-redux';
 import SearchForm from './container/search-form/search-form';
 import FlightsGrid from './components/flights-grid/flights-grid';
 import { getFlights } from './actions';
+import AllFlights from './components/all-flights/all-flights';
 
 function App(props) {
-  const { getFlights, flights } = props;
+  const { getFlights, flights, routes } = props;
+
   useEffect(() => {
-    getFlights()
-  }, [flights, getFlights]);
+    getFlights();
+  }, [getFlights]);
 
   const { origin, destination, departureDate, returnDate } = props.filters || {};
+
   return (
     <div className="App">
       <header className="App-header">
@@ -22,18 +25,21 @@ function App(props) {
           <SearchForm/>
         </aside>
         <section className="Results-section">
-          { props.routes && props.routes.onwards && 
+          {!props.routes && (
+             <AllFlights/>
+          )}
+          {routes && routes.onwards && (
             <FlightsGrid 
-              flights={ props.routes.onwards} 
+              flights={routes.onwards} 
               criteria={{origin, destination, date: departureDate}}
             />
-          }
-          { props.routes && props.routes.return && 
+          )}
+          {routes && routes.return && (
             <FlightsGrid 
-              flights={ props.routes.return}
+              flights={routes.return}
               criteria={{origin: destination, destination: origin, date: returnDate}}
             />
-          }
+          )}
         </section>
       </section>   
     </div>
@@ -50,5 +56,4 @@ const mapDispatchToProps = {
   getFlights
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
-
+export default connect(mapStateToProps, mapDispatchToProps)(App);
