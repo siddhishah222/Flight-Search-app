@@ -8,11 +8,12 @@ export const FlightSearchInfo = (props) => {
   // Function to format the date
   const formatDateString = (dateString) => {
     const formattedDate = new Date(dateString);
+    formattedDate.setDate(formattedDate.getDate() + 1);
     const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     const monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-    const dayOfWeek = daysOfWeek[formattedDate.getDay() + 1];
-    const dayOfMonth = formattedDate.getDate() + 1;
+    const dayOfWeek = daysOfWeek[formattedDate.getDay()];
+    const dayOfMonth = formattedDate.getDate();
     const month = monthsOfYear[formattedDate.getMonth()];
 
     const getDayOfMonthWithSuffix = (day) => {
