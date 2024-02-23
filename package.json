@@ -1,7 +1,7 @@
 {
   "name": "tw-flight-app",
   "version": "0.1.0",
-  "homepage": "https://https://siddhishah222.github.io/Flight-Search-app/",
+  "homepage": "https://siddhishah222.github.io/Flight-Search-app/",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
